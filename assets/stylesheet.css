@@ -1,0 +1,23 @@
+.hide {
+    display:none;
+}
+
+body {
+    background-color: olive;
+}
+
+.row {
+    justify-content: space-between;
+    margin:0
+}
+
+.countdown {
+    align-items: center;
+    width:165px;
+    height: 40px;
+    background-color: darkorange;
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding: 3px 5px;
+   text-align: center;
+}
