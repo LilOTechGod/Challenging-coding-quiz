@@ -1,4 +1,4 @@
-# Code Quiz
+# Challenging coding quiz
 
 My code quiz is for developers all around the world to challenge themselves in order to see where they're at and where they may need to improve! Based on their score.
 
