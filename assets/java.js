@@ -1,5 +1,5 @@
 // show Questions/answers on the screen constantly one after another
-var secondsLeft = 80;
+var secondsLeft = 70;
 var startBtn1 = document.getElementById("startBtn");
 var question = document.getElementById("question-text");
 var currentQuestion= 0
@@ -67,7 +67,7 @@ var questions = [
         button.addEventListener("click", checkAnswer)
         questionsAnswers.appendChild(button);
     }
-   
+    
   }  
 
     function checkAnswer () {
