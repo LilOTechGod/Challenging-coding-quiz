@@ -25,3 +25,10 @@ body {
 .startButton {
     text-align: center;
 }
+
+.button-highscore {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
