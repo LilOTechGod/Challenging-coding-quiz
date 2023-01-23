@@ -8,6 +8,11 @@ var questionSection = document.getElementById("questions-section");
 var questionsAnswers = document.getElementById("question-answers");
 var endOfGame1 = document.getElementById("endOfGame");
 
+var countDownDate = new Date("Jan 22, 2023 21:43:52").getTime();
+
+var myfunc = setInterval(function() {
+}, 1000)
+
 startBtn1.addEventListener("click", startGame);
     // startGame();
 
@@ -84,8 +89,9 @@ var questions = [
         questionSection.setAttribute("class", "hide")
         endOfGame1.removeAttribute("class", "hide")
 
-        
     }
+
+
 // user selects an answer 
 
 // correct/incorrect answer appears 
