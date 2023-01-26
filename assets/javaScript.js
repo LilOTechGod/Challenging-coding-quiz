@@ -8,9 +8,32 @@ var questionSection = document.getElementById("questions-section");
 var questionsAnswers = document.getElementById("question-answers");
 var endOfGame1 = document.getElementById("endOfGame");
 
-var countDownDate = new Date("Jan 22, 2023 21:43:52").getTime();
+var countDownDate = new Date("Jan 25, 2023 00:01:30").getTime();
 
 var myfunc = setInterval(function() {
+
+  var now = new Date().getTime();
+  var timeleft = countDownDate - now;
+
+  var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerHTML = days + "d "
+  document.getElementById("hours").innerHTML = hours + "h " 
+  document.getElementById("mins").innerHTML = minutes + "m " 
+  document.getElementById("secs").innerHTML = seconds + "s"
+
+  // Display the message when countdown is over
+  if (timeleft < 0) {
+    clearInterval(myfunc);
+    document.getElementById("days").innerHTML = ""
+    document.getElementById("hours").innerHTML = "" 
+    document.getElementById("mins").innerHTML = ""
+    document.getElementById("secs").innerHTML = ""
+    document.getElementById("end").innerHTML = "TIME UP!!";
+  }
 }, 1000)
 
 startBtn1.addEventListener("click", startGame);
