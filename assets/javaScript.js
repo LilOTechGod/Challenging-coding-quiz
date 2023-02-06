@@ -7,6 +7,7 @@ var questionSection = document.getElementById("questions-section");
 var questionsAnswers = document.getElementById("question-answers");
 var endOfGame1 = document.getElementById("endOfGame");
 
+// beginning of timer on start page
 let remainingTimeElement = document.querySelector("#timeLeft"),
          	 secondsLeft = 70
 
@@ -18,6 +19,8 @@ const downloadTimer = setInterval(
         secondsLeft -= 1
     }, 
 1000)
+
+// end of timer
 
 startBtn1.addEventListener("click", startGame);
     // startGame();
